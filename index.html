@@ -8,15 +8,71 @@
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/normalize.css">
-    
+
 </head>
 <body>
-    
+    <div class="app">
+        <h1>Expense Tracker</h1>
+        <div class="balance-container">
+            <h2>Balance</h2>
+            <div id="balance">₹ 1000</div>
+        </div>
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">₹ 1200</div>
+            </div>
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">₹ 200</div>
+            </div>
+        </div>
 
-
-
-
-
+        <div class="transaction-container">
+            <h2>Transaction History</h2>
+            <ul>
+                <li>
+                    Salary
+                    <div>
+                        <span class="income-amount">₹ 10000</span>
+                        <button>x</button>
+                    </div>
+                </li>
+                <li>
+                    Grocery
+                    <div>
+                        <span class="expense-amount">₹ 200</span>
+                        <button>x</button>
+                    </div>
+                </li>
+                <li>
+                    Hotel
+                    <div>
+                        <span class="expense-amount">₹ 500</span>
+                        <button>x</button>
+                    </div>
+                </li>
+                <li>
+                    Buy Guitar
+                    <div>
+                        <span class="expense-amount">₹ 1000</span>
+                        <button>x</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <h2>Add New Transaction</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount">
+                <button id="incomeBtn">Add Income</button>
+                <button id="expenseBtn">Add Expense</button>
+            </form>
+        </div>
+    </div>
     <script src="./script/scripts.js"></script>
 </body>
 </html>
