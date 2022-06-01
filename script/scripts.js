@@ -19,6 +19,11 @@ let nameInputEl = document.querySelector('#name');
 let amountInputEl = document.querySelector('#amount');
 
 function init() {
+    let localState = JSON.parse(localStorage.getItem('expenseTrackerState'));
+
+    if (localState !== null){
+        state = localState;
+    }
     updateState();
     initListener();
 }
@@ -93,6 +98,8 @@ function updateState() {
     state.balance = balance;
     state.income = income;
     state.expense = expense;
+
+    localStorage.setItem('expenseTrackerState', JSON.stringify(state));
 
     render();
 }
