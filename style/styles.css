@@ -114,6 +114,7 @@ h2{
 
 .transaction li button{
     padding: 4px 5px 6px 6px;
+    margin-left: 5px;
 }
 
 .form-container{
